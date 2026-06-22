@@ -1,0 +1,33 @@
+format: jb-article
+root: jb/index
+sections:
+- file: notebooks/algorithms
+- file: notebooks/analysis
+- file: notebooks/timing
+- file: notebooks/quiz01
+- file: notebooks/generator
+- file: notebooks/set
+- file: notebooks/recursion
+- file: notebooks/quiz02
+- file: notebooks/dfs
+- file: notebooks/searching
+- file: notebooks/hashmap
+- file: notebooks/quiz03
+- file: notebooks/heap
+- file: notebooks/huffman
+- file: notebooks/philosophy
+- file: notebooks/quiz04
+- file: notebooks/redis
+- file: notebooks/linked_list
+- file: notebooks/indexer
+- file: notebooks/quiz05
+- file: notebooks/deque
+- file: notebooks/graph
+- file: notebooks/level_order
+- file: notebooks/bfs
+- file: notebooks/quiz06
+- file: notebooks/crawler
+- file: notebooks/mergesort
+- file: notebooks/fft
+- file: notebooks/quiz07
+- file: notebooks/pagerank
