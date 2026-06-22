@@ -1,33 +1,57 @@
 format: jb-article
 root: jb/index
 sections:
-- file: notebooks/algorithms
-- file: notebooks/analysis
-- file: notebooks/timing
-- file: notebooks/quiz01
-- file: notebooks/generator
-- file: notebooks/set
-- file: notebooks/recursion
-- file: notebooks/quiz02
-- file: notebooks/dfs
-- file: notebooks/searching
-- file: notebooks/hashmap
-- file: notebooks/quiz03
-- file: notebooks/heap
-- file: notebooks/huffman
-- file: notebooks/philosophy
-- file: notebooks/quiz04
-- file: notebooks/redis
-- file: notebooks/linked_list
-- file: notebooks/indexer
-- file: notebooks/quiz05
-- file: notebooks/deque
-- file: notebooks/graph
-- file: notebooks/level_order
-- file: notebooks/bfs
-- file: notebooks/quiz06
-- file: notebooks/crawler
-- file: notebooks/mergesort
-- file: notebooks/fft
-- file: notebooks/quiz07
-- file: notebooks/pagerank
+- path: modules/01-algorithm-analysis
+  title: Algorithm Analysis
+  sections:
+  - file: notebooks/algorithms
+  - file: notebooks/analysis
+  - file: notebooks/timing
+  - file: notebooks/quiz01
+- path: modules/02-iteration-recursion
+  title: Iteration & Recursion
+  sections:
+  - file: notebooks/generator
+  - file: notebooks/set
+  - file: notebooks/recursion
+  - file: notebooks/quiz02
+- path: modules/03-search-mapping
+  title: Search & Mapping
+  sections:
+  - file: notebooks/dfs
+  - file: notebooks/searching
+  - file: notebooks/hashmap
+  - file: notebooks/quiz03
+- path: modules/04-heaps-compression
+  title: Heaps & Compression
+  sections:
+  - file: notebooks/heap
+  - file: notebooks/huffman
+  - file: notebooks/philosophy
+  - file: notebooks/quiz04
+- path: modules/05-indexing
+  title: Indexing
+  sections:
+  - file: notebooks/redis
+  - file: notebooks/linked_list
+  - file: notebooks/indexer
+  - file: notebooks/quiz05
+- path: modules/06-graphs
+  title: Graphs
+  sections:
+  - file: notebooks/deque
+  - file: notebooks/graph
+  - file: notebooks/level_order
+  - file: notebooks/bfs
+  - file: notebooks/quiz06
+- path: modules/07-sorting-spectral-methods
+  title: Sorting & Spectral Methods
+  sections:
+  - file: notebooks/crawler
+  - file: notebooks/mergesort
+  - file: notebooks/fft
+  - file: notebooks/quiz07
+- path: modules/08-ranking
+  title: Ranking
+  sections:
+  - file: notebooks/pagerank
