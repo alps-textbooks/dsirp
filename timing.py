@@ -1,13 +1,12 @@
 
 
-import os
+import time
 
 def etime():
-    """Measures user and system time this process has used.
+    """Measure high-resolution elapsed real time.
 
-    Returns the sum of user and system time."""
-    user, sys, chuser, chsys, real = os.times()
-    return user+sys
+    Returns wall-clock time in seconds."""
+    return time.perf_counter()
 
 def time_func(func, n):
     """Run a function and return the elapsed time.
@@ -15,7 +14,7 @@ def time_func(func, n):
     func: function
     n: problem size, passed as an argument to func
 
-    returns: user+sys time in seconds
+    returns: elapsed real time in seconds
     """
     start = etime()
     func(n)
@@ -23,7 +22,7 @@ def time_func(func, n):
     elapsed = end - start
     return elapsed
 
-def run_timing_test(func, start_at=10, max_time=1):
+def run_timing_test(func, start_at=10, max_time=1, max_exponent=23):
     """Tests the given function with a range of values for n.
 
     func: function object
@@ -32,7 +31,7 @@ def run_timing_test(func, start_at=10, max_time=1):
     """
     ns = []
     ts = []
-    for i in range(start_at, 28):
+    for i in range(start_at, max_exponent + 1):
         n = 2**i
         t = time_func(func, n)
         print(n, t)
@@ -56,6 +55,9 @@ def fit(ns, ts, exp=1.0, index=-1):
 
 
     """
+    if len(ns) == 0 or len(ts) == 0 or len(ns) != len(ts):
+        raise ValueError("fit requires matching non-empty timing data")
+
     # Use the element with the given index as a reference point,
     # and scale all other points accordingly.
     nref = ns[index]
