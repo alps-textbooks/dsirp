@@ -15,6 +15,7 @@ dependencies:
   - beautifulsoup4
   - redis
   - redis-py
+  - fakeredis
   - jupyter-book
   - ghp-import
   - pip
