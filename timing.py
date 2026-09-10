@@ -32,7 +32,10 @@ def run_timing_test(func, start_at=10, max_time=1):
     """
     ns = []
     ts = []
-    for i in range(start_at, 28):
+    # Stop at 2**22. Beyond that the containers these tests build run to
+    # hundreds of megabytes, so what gets measured is the machine running
+    # out of memory rather than the operation under test.
+    for i in range(start_at, 23):
         n = 2**i
         t = time_func(func, n)
         print(n, t)
