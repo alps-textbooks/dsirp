@@ -55,3 +55,5 @@ sections:
   title: Ranking
   sections:
   - file: notebooks/pagerank
+- file: about-this-book
+  title: About This Book
