@@ -4,14 +4,14 @@
 
 **Data Structures and Information Retrieval in Python** · *Data structures and algorithms through building a web search engine*
 
-**2Sigma School** · Alps edition · Updated October 2026
+**2Sigma School** · Alps edition · Updated November 2026
 
 This book teaches data structures and algorithms through the lens of building a web search engine: analysis, generators, recursion, graph search, hashing, heaps and Huffman coding. This Alps edition runs the book's code in the page, with nothing to install.
 
 | At a glance | |
 |---|---|
 | **31 pages** | The book's chapters and sections |
-| **618 code cells** | Python that runs in the browser, apart from any cells shown for reference |
+| **623 code cells** | Python that runs in the browser, apart from any cells shown for reference |
 
 ## How to Use It
 
@@ -37,7 +37,6 @@ This edition differs from its source so that the book works on Alps, where its c
 
 - a table of contents, or changes to one, so that the book imports as chapters and pages
 - code adjusted for the library versions that run in the browser, or for libraries and system tools that are not available there
-- data read from a place the browser can reach, or replaced where the original can no longer be loaded
 - cells shown for reference, when they need something the browser cannot do
 - cells marked as expected to fail, such as a blank for the reader to fill in
 - corrections to Markdown or code, so that a page renders and runs
